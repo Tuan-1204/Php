@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    address VARCHAR(100),
+    avatar VARCHAR(255),
+    gender VARCHAR(10),
+    hobby VARCHAR(255)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
+
+DELETE FROM user;
